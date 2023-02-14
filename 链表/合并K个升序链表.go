@@ -7,6 +7,7 @@ func main() {
 	})
 }
 
+// https://leetcode.cn/problems/merge-k-sorted-lists/
 type ListNode struct {
 	Val  int
 	Next *ListNode
@@ -23,7 +24,7 @@ func mergeDepth(lists []*ListNode, l, r int) *ListNode {
 	if l > r {
 		return nil
 	}
-	mid := (1 + r) >> 1
+	mid := (l + r) >> 1
 	return merge(mergeDepth(lists, l, mid), mergeDepth(lists, mid+1, r))
 }
 

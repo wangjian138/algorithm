@@ -1,7 +1,6 @@
 package main
 
 func main() {
-
 }
 
 // https://leetcode.cn/problems/container-with-most-water/?favorite=2cktkvj

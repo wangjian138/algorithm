@@ -29,12 +29,10 @@ func getAll(nums []int, data []int, filter map[int]bool) {
 		if i > 0 && nums[i] == nums[i-1] && !filter[i-1] {
 			continue
 		}
-
 		filter[i] = true
 		data = append(data, nums[i])
 		getAll(nums, data, filter)
 		data = data[0 : len(data)-1]
 		filter[i] = false
 	}
-
 }

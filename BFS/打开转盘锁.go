@@ -69,7 +69,6 @@ func getNewStr(str string, num int, opt int) string {
 		numStr = getAddNum(str[num])
 	} else {
 		numStr = getDesNum(str[num])
-
 	}
 
 	newStr = append(newStr, numStr)

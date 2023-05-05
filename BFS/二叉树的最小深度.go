@@ -15,6 +15,7 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+// https://leetcode.cn/problems/minimum-depth-of-binary-tree/
 func minDepth(root *TreeNode) int {
 	if root == nil {
 		return 0

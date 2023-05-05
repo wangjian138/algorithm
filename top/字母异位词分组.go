@@ -5,6 +5,12 @@ import "fmt"
 func main() {
 	s := "aba"
 	fmt.Printf("encode:%v\n", encode(s))
+
+	s1 := make([]int, 0, 10)
+	for i := 0; i < 100; i++ {
+		s1 = append(s1, 100)
+	}
+	fmt.Printf("s1:%v\n", cap(s1[:0:10]))
 }
 
 // https://leetcode.cn/problems/group-anagrams/

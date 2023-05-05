@@ -18,9 +18,7 @@ func permute(nums []int) [][]int {
 }
 func findRes(nums []int, res []int, used map[int]bool) {
 	if len(res) == len(nums) {
-		newRes = make([]int, len(res))
-		copy(newRes, res)
-		tree = append(tree, newRes)
+		tree = append(tree, append([]int(nil), res...))
 		return
 	}
 
@@ -39,4 +37,3 @@ func findRes(nums []int, res []int, used map[int]bool) {
 }
 
 var tree [][]int
-var newRes []int
